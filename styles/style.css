@@ -1,0 +1,204 @@
+:root{
+    --Color_Background: rgb(198, 161, 116);
+    --Color_Font: white;
+    --Color_Font_hover: rgb(16, 16, 16);
+    --Color_Button: #db966f;
+    --Color_Button_Hover: rgb(202, 78, 20);
+}
+
+body{
+    height: 100%;
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--Color_Font);
+    font-family: 'Laila', serif; 
+}
+
+header{
+    
+    border-radius: 4px 4px 0px 0px;
+    text-align: center;
+    text-shadow: 4px 6px 15px #000000;
+    margin: 0px 0.5%; 
+    margin-bottom: 20px;
+}
+
+header h2{
+    margin: 15px 40% 15px 40%;
+}
+
+.page{
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+.navBar{
+    padding: 15px;
+    width: 7%;
+    float: left;
+}
+
+.navBar a{
+    border: #000000 solid 1px;
+    border-radius: 4px;
+    background-color: var(--Color_Button);
+    color: var(--Color_Font);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 12px;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+
+.navBar a:hover{
+    font-weight: bolder;
+    background-color: var(--Color_Button_Hover);
+    box-shadow: 3px 6px 8px 0px #000000;
+}
+
+.navBar .current{
+    background-color: rgb(84, 189, 152);
+    font-weight: bolder;
+}
+
+.content{
+    color: var(--Color_Font);
+    background-image: linear-gradient(to bottom left, rgb(219, 183, 149), rgb(219, 183, 149));
+    background-color: var(--Color_Background);
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    margin: 0px 22% 0% 23%;
+    padding: 15px 15px 15px 15px;
+  }
+
+
+
+.personalInfo th{
+    text-align: left;
+    padding-right: 10px;
+}
+
+
+.alertMessage{
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    padding: 5px 12px;
+    margin: 5px 14px;
+    color: #000000;
+}
+
+#alertSuccess{
+    background-color: #00b100;
+}
+#alertWarning{
+    background-color: #e4e400;
+}
+#alertFail{
+    background-color: #f00028;
+}
+
+
+
+form td{
+    margin-top: 5px;
+}
+
+form p{
+    padding: 0px 5px;
+    text-align: right;
+}
+
+div {
+    border-radius: 5px;
+    background-color: rgb(253, 245, 236);
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+    color: rgb(16, 16, 16);
+    margin-left: 12%;
+    z-index: 3;
+}
+
+form input[type=text], input[type=password], input[type=email]{
+    color: rgb(16, 16, 16);
+    width: 100%;
+    padding: 17px 25px;
+    display: inline-block;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    padding: 2px 5px;
+}
+
+form input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+    border: 3px solid #555;
+}
+
+input[type=submit], input[type=reset]{
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(100, 230, 187);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px #999;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgb(92, 195, 162);
+}
+
+input[type=submit]:active, input[type=reset]:active{
+    background-color: rgb(92, 195, 162);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px)
+}
+
+
+.button{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 6px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    right: 0;
+}
+
+
+table {
+    width: 100%;
+}
+th, td {
+    color: rgb(16, 16, 16);
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(253, 245, 236);
+  }
+.friendList td{
+    border: 1px solid black;
+    padding: 1px 2px;
+}
+
+.friendList p{
+    text-align: left;
+}
+
